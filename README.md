@@ -49,7 +49,6 @@ Then type commands in plain English, for example:
 - *Organize my desktop*
 - *List files on my Desktop*
 - *Empty the recycle bin and shut down the PC in 60 seconds*
-- *In the folder Business Docs, separate files into Pakistan and International using keywords pak and intl*
 - *Open VS Code*
 
 Type `quit` or `exit` to stop.
