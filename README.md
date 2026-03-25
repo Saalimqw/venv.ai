@@ -1,6 +1,6 @@
 # AI Desktop Agent (JARVIS-style)
 
-<<<<<<< HEAD
+
 A local AI agent  it takes natural-language commands and automates your PC: organize desktop, run apps, clean recycle bin, separate files by category, and more.
 =======
 A local AI agent inspired by [*I Built an AI agent That Works For Me 24/7*]
