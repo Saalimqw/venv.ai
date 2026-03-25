@@ -1,7 +1,7 @@
 """
-AI Desktop Agent — JARVIS-style assistant.
+AI Desktop Agent — JARVIS-style assistant with VENV GUI.
 
-Inspired by STONIC / "I Built an AI agent That Works For Me 24/7".
+/ "I Built an AI agent That Works For Me 24/7".
 Talk in natural language; the agent runs commands, organizes files, and more.
 """
 import sys
@@ -64,11 +64,30 @@ def _try_fastpath(user: str) -> str | None:
 
 
 def main():
+    """Launch VENV AI GUI interface directly (keeping all original functionality)."""
+    import tkinter as tk
+    from venv_gui import VENVGUInterface
+    
+    print("Starting VENV AI...")
+    root = tk.Tk()
+    app = VENVGUInterface(root)
+    
+    # Welcome message
+    app.add_transcript("VENV AI System Initialized")
+    app.add_transcript("Press F1 for system status report")
+    app.add_transcript("Type commands in the input field below")
+    
+    root.mainloop()
+
+
+def cli_main():
+    """Original CLI functionality (kept for reference/fallback)."""
     print("AI Desktop Agent — type OR speak (or 'quit' to exit).")
-    print("Commands: /voice on|off, /mute on|off, /talk (one-shot voice)\n")
+    print("Commands: /voice on|off, /mute on|off, /talk (one-shot voice)")
+    print("Voice output: ON by default 🔊\n")
     history = []
     voice_in = False
-    voice_out = False
+    voice_out = True  # Enable voice output by default
     vosk_model_dir = ROOT / "models" / "vosk-model-small-en-us-0.15"
     while True:
         try:

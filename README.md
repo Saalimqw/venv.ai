@@ -1,6 +1,11 @@
 # AI Desktop Agent (JARVIS-style)
 
+<<<<<<< HEAD
 A local AI agent  it takes natural-language commands and automates your PC: organize desktop, run apps, clean recycle bin, separate files by category, and more.
+=======
+A local AI agent inspired by [*I Built an AI agent That Works For Me 24/7*]
+it takes natural-language commands and automates your PC: organize desktop, run apps, clean recycle bin, separate files by category, and more.
+>>>>>>> 5e52f95 (Initial project files and python cache)
 
 ## What it can do
 
@@ -49,6 +54,10 @@ Then type commands in plain English, for example:
 - *Organize my desktop*
 - *List files on my Desktop*
 - *Empty the recycle bin and shut down the PC in 60 seconds*
+<<<<<<< HEAD
+=======
+- *In the folder Business Docs, separate files into India and International using keywords ind and intl*
+>>>>>>> 5e52f95 (Initial project files and python cache)
 - *Open VS Code*
 
 Type `quit` or `exit` to stop.

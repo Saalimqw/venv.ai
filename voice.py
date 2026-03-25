@@ -17,12 +17,13 @@ def speak(text: str) -> None:
     """Speak text out loud (offline)."""
     try:
         import pyttsx3
-
+        
         engine = pyttsx3.init()
         engine.setProperty("rate", 185)
         engine.say(text)
         engine.runAndWait()
-    except Exception:
+        # Removed debug print to prevent console spam
+    except Exception as e:
         # If TTS isn't available, fail silently (CLI still works)
         return
 
