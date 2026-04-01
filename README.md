@@ -33,13 +33,6 @@ it takes natural-language commands and automates your PC: organize desktop, run 
    ```
    Get a key at [console.groq.com](https://console.groq.com/). The agent uses `qwen/qwen3-32b` by default.
 
-   **Or using OpenAI:**
-   ```env
-   OPENAI_API_KEY=sk-your-openai-key
-   MODEL=gpt-4o-mini
-   ```
-
-4. **Optional**: set a different model in `.env` (e.g. `MODEL=qwen/qwen3-32b` for Groq).
 
 ## Run
 
